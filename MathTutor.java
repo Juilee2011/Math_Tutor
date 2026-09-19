@@ -25,11 +25,14 @@
     System.out.println("3. Factorial");
     System.out.println("Please select one: ");
     selection = input.nextInt();
+    input.close();
 
     //calls one chosen method according to selection
     if (selection == 1)
     {
-        //call volume of sphere method
+        Sphere_Volume sphere = new Sphere_Volume();
+        sphere.getInput();
+        sphere.solveVolume();
     }
     else if (selection == 2)
     {
