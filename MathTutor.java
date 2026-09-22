@@ -13,8 +13,8 @@
     public static void main ( String [] args )
     {
         //creates variables that will store each answer/input
-        private int selection = 1;
-        private String choice;
+        int selection = 1;
+        String choice;
 
         while (selection > 0)
         {

@@ -11,7 +11,7 @@ public class Sphere_Volume
 {
     public void getInput()
     {
-        private double radius;
+        double radius;
         
         //gets the radius of the sphere
         Scanner input = new Scanner(System.in);
