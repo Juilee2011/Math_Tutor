@@ -1,11 +1,20 @@
+/*
+ * Math_Tutor
+ * Juilee Joshi
+ * Helps solve 6 types of problems
+ *
+ * Resources: https://www.mathsisfun.com/numbers/fibonacci-sequence.html
+ *
+ */
 import java.util.Scanner;
 public class Fibonacci 
 {
     public void getValues()
     {
         //declare variables to store input
-        private int numbers;
+        private int count;
         private int maxValue;
+        private int sum;
 
         //asks user to input a value
         Scanner input = new Scanner(System.in);
@@ -16,6 +25,22 @@ public class Fibonacci
 
     public void solve()
     {
-        //use for loop to
+        count = 0;
+        for (int i = 0; i < maxValue; i ++)
+        {
+            sum = sum + (sum + 1);
+            count += 2;
+        }
+    }
+
+    public void printFormula()
+    {
+        //prints formula to user
+
+    }
+    
+    public void printAnswer()
+    {
+        //prints answer to user
     }
 }

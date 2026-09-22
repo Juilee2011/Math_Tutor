@@ -1,3 +1,11 @@
+ /*
+ * Slope
+ * Juilee Joshi
+ * Finds the slope of a line by taking user input of X1, X2, Y1, and Y2
+ *
+ * Resources: NONE
+ *
+ */
 import java.util.Scanner;
 public class Slope
 {
@@ -22,8 +30,9 @@ public class Slope
         xOne = input.nextInt();
         input.close();
 
-        //equation to find m (the slope)
+        //equation to find m (the slope) and prints it to the user
         slope = (yTwo - yOne) / (xTwo - xOne);
+        System.out.println("The formula for finding the slope is: (Y2 - Y1) / (X2 - X1)");
 
         //prints the slope
         System.out.println("Your slope is: " + slope);

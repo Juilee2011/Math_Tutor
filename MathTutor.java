@@ -3,16 +3,14 @@
  * Juilee Joshi
  * Helps solve 6 types of problems
  *
- * Resources :
+ * Resources: NONE
  *
  */
-
- import java.io.IOException;
  import java.util.Scanner ;
 
  public class MathTutor
  {
-    public static void main ( String [] args ) throws IOException
+    public static void main ( String [] args )
     {
         //creates variables that will store each answer/input
         private int selection = 1;
@@ -58,7 +56,11 @@
             }
             else if (selection == 5)
             {
-                //call Fibonacci sequence method
+                Fibonacci fib = new Fibonacci();
+                fib.getValues();
+                fib.printFormula();
+                fib.solve();
+                fib.printAnswer();
             }
             else
             {

@@ -1,3 +1,11 @@
+ /*
+ * PythTheorem
+ * Juilee Joshi
+ * Takes user input and finds the missing hypotenuse side of a right triangle using Pythagorean Theorem
+ *
+ * Resources: NONE
+ *
+ */
 import java.util.Scanner;
 public class PythTheorem 
 {
@@ -17,7 +25,8 @@ public class PythTheorem
         b = input.nextDouble();
         input.close();
 
-        //finds missing side (hypotenuse)
+        // prints the formula to the user and finds the missing side (hypotenuse)
+        System.out.println("The Pythagorean Theorem is: a ^ 2 + b ^ 2 = c ^ 2");
         missing = Math.pow(a, 2) + Math.pow(b, 2);
         answer = Math.sqrt(missing);
 
