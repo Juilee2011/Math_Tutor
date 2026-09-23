@@ -9,18 +9,17 @@
 import java.util.Scanner;
 public class Fibonacci 
 {
+    //declare variables to store input
+    private int count;
+    private int maxValue;
+    private int sum;
+
     public void getValues()
     {
-        //declare variables to store input
-        private int count;
-        private int maxValue;
-        private int sum;
-
         //asks user to input a value
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter a maximum value to count towards: ");
         maxValue = input.nextInt();
-        input.close();
     }
 
     public void solve()

@@ -28,9 +28,7 @@
             System.out.println("5. Fibonacci series");
             System.out.println("Please select one: ");
             selection = input.nextInt();
-            input.close();
     
-
             //calls one chosen method according to selection
             if (selection == 1)
             {
@@ -77,9 +75,18 @@
             {
                 selection = 1;
             }
+            if (choice.equals("y"))
+            {
+                System.out.println("Error! Please enter an uppercase Y!");
+            }
+            if (choice.equals("n"))
+            {
+                System.out.println("Error! Please enter an uppercase N!");
+            }
             if (choice.equals("N"))
             {
                 selection = 0;
+                System.out.println("Thank you for using Math Tutor!");
             }
 
         }

@@ -9,21 +9,19 @@
 import java.util.Scanner;
 public class Factorial 
 {
+    //create variable to store input and answer
+    private int value;
+    private int solution = 1;
+
     public void getValue()
     {
-        //create variable to store input
-        private int value;
-
         //gets user input
         Scanner input = new Scanner(System.in);
-        System.out.println("Please enter a whole number: ");
+        System.out.println("Please enter a positive whole number: ");
         value = input.nextInt();
-        input.close();
     }
     public void findFactorial()
     {
-        //declare variable to store answer
-        private int solution = 1;
 
         //prints the formula to the user
         System.out.println("This is the formula for doing factorial: " + value + "!");

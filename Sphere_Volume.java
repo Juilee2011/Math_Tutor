@@ -9,15 +9,15 @@
 import java.util.Scanner;
 public class Sphere_Volume 
 {
+    //declares variable to store radius value
+    private double radius;
+
     public void getInput()
     {
-        double radius;
-        
         //gets the radius of the sphere
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter the radius of the sphere: ");
         radius = input.nextDouble();
-        input.close();
     }
     public void solveVolume()
     {

@@ -9,21 +9,30 @@
 import java.util.Scanner;
 public class PythTheorem 
 {
+    //declare variables that store side inputs
+    private double a;
+    private double b;
+    private double missing;
+    private double answer;
+
     public void getSides()
     {
-        //declare variables that store side inputs
-        private double a;
-        private double b;
-        private double missing;
-        private double answer;
-
         //gets user input
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter the first given side: ");
         a = input.nextDouble();
         System.out.println("Please enter the second side in order to find the hypotenuse: ");
         b = input.nextDouble();
-        input.close();
+
+        //checks if sides are negative
+        if (a < 0)
+        {
+            System.out.println("Error! Please enter a positive side!");
+        }
+        if (b < 0)
+        {
+            System.out.println("Error! Please enter a positive side!");
+        }
 
         // prints the formula to the user and finds the missing side (hypotenuse)
         System.out.println("The Pythagorean Theorem is: a ^ 2 + b ^ 2 = c ^ 2");

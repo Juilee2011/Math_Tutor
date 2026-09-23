@@ -9,19 +9,29 @@
 import java.util.Scanner;
 public class Area_Triangle 
 {
+    private double base;
+    private double height;
+    private double answer;
+
     public void getInput()
     {
-        private double base;
-        private double height;
-        private double answer;
-
-        //asks for user input
+         //asks for user input
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter the base of your triangle: ");
         base = input.nextDouble();
         System.out.println("Please enter your height: ");
         height = input.nextDouble();
-        input.close();
+
+        //checks if base or height is negative
+        if (base < 0)
+        {
+            System.out.println("Error! Please enter a positive value for the base!");
+        }
+        if (height < 0)
+        {
+            System.out.println("Error! Please enter a positive value for the height!");
+        }
+
     }
     public void outputFormula()
     {

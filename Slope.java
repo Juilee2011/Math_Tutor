@@ -9,26 +9,25 @@
 import java.util.Scanner;
 public class Slope
 {
+    //declare variables used to store values
+    private double yOne;
+    private double yTwo;
+    private double xOne;
+    private double xTwo;
+    private double slope;
+
     public void getVariables()
     {
-        //declare variables used to store values
-        private int yOne;
-        private int yTwo;
-        private int xOne;
-        private int xTwo;
-        private int slope;
-
         //gets the two Y and two X values in order to find the slope
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter your Y2 value: ");
-        yTwo = input.nextInt();
+        yTwo = input.nextDouble();
         System.out.println("Please enter your Y1 value: ");
-        yOne = input.nextInt();
+        yOne = input.nextDouble();
         System.out.println("Please enter your X2 value: ");
-        xTwo = input.nextInt();
+        xTwo = input.nextDouble();
         System.out.println("Please enter your X1 value: ");
-        xOne = input.nextInt();
-        input.close();
+        xOne = input.nextDouble();
 
         //equation to find m (the slope) and prints it to the user
         slope = (yTwo - yOne) / (xTwo - xOne);
@@ -37,6 +36,5 @@ public class Slope
         //prints the slope
         System.out.println("Your slope is: " + slope);
 
-        
     }   
 }
