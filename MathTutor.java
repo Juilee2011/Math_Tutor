@@ -26,13 +26,14 @@
             System.out.println("3. Factorial");
             System.out.println("4. Slope of a line");
             System.out.println("5. Fibonacci series");
+            System.out.println("6. Area of a triangle");
             System.out.println("Please select one: ");
             selection = input.nextInt();
     
             //calls one chosen method according to selection
             if (selection == 1)
             {
-                Sphere_Volume sphere = new Sphere_Volume();
+                SphereVolume sphere = new SphereVolume();
                 sphere.getInput();
                 sphere.solveVolume();
             }
@@ -51,6 +52,7 @@
             {
                 Slope slope = new Slope();
                 slope.getVariables();
+                slope.findSlope();
             }
             else if (selection == 5)
             {
@@ -58,7 +60,13 @@
                 fib.getValues();
                 fib.printFormula();
                 fib.solve();
-                fib.printAnswer();
+            }
+            else if (selection == 6)
+            {
+                AreaTriangle area = new AreaTriangle();
+                area.getInput();
+                area.outputFormula();
+                area.printAnswer();
             }
             else
             {

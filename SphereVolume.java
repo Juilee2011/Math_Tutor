@@ -1,5 +1,5 @@
  /*
- * Sphere_Volume
+ * SphereVolume
  * Juilee Joshi
  * Finds the volume of a sphere after the user inputs the radius of the sphere
  *
@@ -7,7 +7,7 @@
  *
  */
 import java.util.Scanner;
-public class Sphere_Volume 
+public class SphereVolume 
 {
     //declares variable to store radius value
     private double radius;
@@ -18,6 +18,13 @@ public class Sphere_Volume
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter the radius of the sphere: ");
         radius = input.nextDouble();
+
+        //checks if radius is equal to 0
+        if (radius == 0)
+        {
+            System.out.println("Error! Please enter a radius greater than 0!");
+            return;
+        }
     }
     public void solveVolume()
     {

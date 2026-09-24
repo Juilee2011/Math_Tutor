@@ -25,15 +25,12 @@ public class PythTheorem
         b = input.nextDouble();
 
         //checks if sides are negative
-        if (a < 0)
+        if (a <= 0 || b <= 0)
         {
-            System.out.println("Error! Please enter a positive side!");
+            System.out.println("Error! Please enter a positive side greater than 0!");
+            return;
         }
-        if (b < 0)
-        {
-            System.out.println("Error! Please enter a positive side!");
-        }
-
+    
         // prints the formula to the user and finds the missing side (hypotenuse)
         System.out.println("The Pythagorean Theorem is: a ^ 2 + b ^ 2 = c ^ 2");
         missing = Math.pow(a, 2) + Math.pow(b, 2);

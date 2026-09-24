@@ -19,6 +19,13 @@ public class Factorial
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter a positive whole number: ");
         value = input.nextInt();
+
+        //checks if input is a negative
+        if (value < 0)
+        {
+            System.out.println("Error! Please enter a positive value!");
+            return;
+        }
     }
     public void findFactorial()
     {

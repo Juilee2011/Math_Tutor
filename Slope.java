@@ -29,12 +29,22 @@ public class Slope
         System.out.println("Please enter your X1 value: ");
         xOne = input.nextDouble();
 
+    }
+    public void findSlope()
+    {
+        //checks if inputs are greater than 100
+        if (yTwo >= 100 || yOne >= 100 || xOne >= 100 || xTwo >= 100)
+        {
+            System.out.println("Error! Please enter a value less than 100!");
+            return;
+        }
+
         //equation to find m (the slope) and prints it to the user
         slope = (yTwo - yOne) / (xTwo - xOne);
         System.out.println("The formula for finding the slope is: (Y2 - Y1) / (X2 - X1)");
 
         //prints the slope
         System.out.println("Your slope is: " + slope);
+    }
 
-    }   
 }

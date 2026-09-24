@@ -10,9 +10,7 @@ import java.util.Scanner;
 public class Fibonacci 
 {
     //declare variables to store input
-    private int count;
     private int maxValue;
-    private int sum;
 
     public void getValues()
     {
@@ -20,26 +18,38 @@ public class Fibonacci
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter a maximum value to count towards: ");
         maxValue = input.nextInt();
+
+        //checks if input is 0 or 1
+        if (maxValue == 0 || maxValue == 1)
+        {
+            System.out.println("Error! Please enter a value other than 0 or 1!");
+            return;
+        }
     }
 
     public void solve()
     {
-        count = 0;
-        for (int i = 0; i < maxValue; i ++)
+        int f1 = 0;
+        int f2 = 1;
+        int sum = 1;
+        
+        System.out.println("Your Fibonacci sequence is: ");
+        System.out.println(f1);
+        System.out.println(f2);
+        while ((sum + f1) <= maxValue)
         {
-            sum = sum + (sum + 1);
-            count += 2;
+            sum = f1 + f2;
+            System.out.println(sum);
+            f1 = f2;
+            f2 = sum;
         }
     }
 
     public void printFormula()
     {
-        //prints formula to user
+        System.out.println("The Fibonacci sequence starts with the sum of 0 and 1,");
+        System.out.println("with the next number being found by adding up the two numbers before it");
 
     }
-    
-    public void printAnswer()
-    {
-        //prints answer to user
-    }
+
 }
